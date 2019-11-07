@@ -1,7 +1,7 @@
 import { START_FETCHING, FETCH_SUCCESS, FETCH_FAILURE } from '../actions';
 
 const initialState = {
-  catFacts: [],
+  champions: [],
   isFetching: false,
   error: ''
 };
@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
     case FETCH_SUCCESS:
       return {
         ...state,
-        catFacts: action.payload,
+        champions: action.payload,
         isFetching: false,
         error: ''
       };

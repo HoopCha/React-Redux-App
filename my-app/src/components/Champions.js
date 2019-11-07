@@ -62,7 +62,7 @@ const CatFacts = props => {
 
 const mapStateToProps = state => {
   return {
-    champions: state.catFacts,
+    champions: state.champions,
     isFetching: state.isFetching,
     error: state.error
   };
